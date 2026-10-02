@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione ad app di streaming musicale</title>
+
+    <meta
+    name="description"
+    content="Epicode esercitazione html creazione di un form per registrarsi ad una app di streaming musicale"
+    >
+</head>
+<body>
+    <h1>Crea il tuo profilo musicale personalizzato </h1>
+    <p>Condividi con noi i tuoi gusti musicali e registrati</p>
+
+    <h2>Dati personali dell'utente</h2>
+
+    <form 
+        onsubmit="
+            event.preventDefault();
+           
+                alert('Registrazione Inviata!');" >
+            
+           
+        
+        <div>
+            <span>Inserisci il tuo nome</span>
+            <input type="text" required>
+            <!se non inserisci span vicino a text ci deve essere il placeholder con scritto cosa inserire>
+            <!in questo caso lascia così altrimenti viene la data senza spiegazione di cosa inserire>
+        </div>
+        <div>
+            <span>Inserisci il tuo cognome</span>
+            <input type="text" required>
+        </div>
+        <div>
+            <span>Inserisci la tua mail</span>
+            <input type="email" required>
+        </div>
+        <div>
+            <span>Inserisci la tua password</span>
+            <input type="password" required>
+        </div>
+        <div>
+            <span>Inserisci la tua data di nascita</span>
+            <input type="date" required>
+        <div>
+            <span>Inserisci il tuo numero di telefono</span>
+            <input type="number" placeholder="*Campo non obbligatorio*">
+            <!non metto required perchè non tutte le applicazioni lo richiedono>
+        </div>
+
+        <h3>Generi musicali consigliati</h3>
+        <p>Seleziona una o più delle seguenti categorie</p>
+
+        <ul>
+        
+            <span>Blues</span> <input type="checkbox">
+            <span>Elettronica</span> <input type="checkbox">
+            <span>Hip-Hop</span> <input type="checkbox">
+            <span>Jazz</span> <input type="checkbox">
+            <span>Metal</span> <input type="checkbox">
+     
+            <span>Musica classica</span> <input type="checkbox">
+            <span>Pop</span> <input type="checkbox">
+            <span>Rap</span> <input type="checkbox">
+            <span>Reggae</span> <input type="checkbox">
+            <span>Rock</span> <input type="checkbox">
+            <!fatto inizialmente con tutti i div per fare in modo che fossero in colonna verticale ma>
+            <!risultavano troppo vicini e ci sarebbe stato più difficolta nelle spunte delle checkbox>
+
+        </ul>
+
+        <h4>Termini e condizioni di servizio</h4>
+        
+        <div>
+            <input type="radio" required>
+            <span>Accetto i termini e le condizioni di servizio</span>
+        </div>
+
+        <button type="submit">Invia registrazione</button>
+
+    </form>
+
+ </body>
+</html>
